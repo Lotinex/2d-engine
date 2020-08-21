@@ -1,0 +1,161 @@
+@font-face { font-family: NanumSquareRound; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face {
+    font-family: 'Minecraft-Regular';
+    src:url('Minecraft-Regular.ttf.woff') format('woff'),
+        url('Minecraft-Regular.ttf.svg#Minecraft-Regular') format('svg'),
+        url('Minecraft-Regular.ttf.eot'),
+        url('Minecraft-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+html, 
+body {
+    font-family: NanumSquareRound;
+    height: 100%;
+    margin: 0 auto;
+    background: rgb(34, 184, 29)
+}
+
+.inquiry {
+    display: inline-block;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    cursor: help;
+}
+.inquiry:hover {
+    opacity: 0.7;
+}
+
+#stage {
+    background: none;
+}
+#nick {
+    position: fixed;
+    bottom: 10%;
+    margin-left: 50px;
+    display: flex;
+}
+
+.input-default {
+    border: 2px solid rgb(20, 39, 77);
+    border-radius: 5px;
+    transition: 0.3s;
+    padding-left: 5px;
+}
+.input-default:focus {
+    border: 2px solid rgb(43, 83, 158);
+    outline: none;
+}
+
+
+.button-default {
+    border: 2px solid rgb(20, 39, 77);
+    border-radius: 5px;
+    margin-left: 5px;
+    width: 50px;
+    padding: 5px;
+    cursor: pointer;
+}
+.button-default:hover {
+    border: 2px solid rgb(43, 83, 158);
+}
+.button-default:active {
+    outline: none;
+}
+
+#menu {
+    background: rgba(0,0,0,0.7);
+    height: 150px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#players {
+    position: fixed;
+    top:0;
+    left:0;
+    margin-right: 10px;
+    width: 180px;
+    height: 500px;
+    background: rgba(0,0,0,0.5);
+    padding: 5px;
+    color: white;
+    overflow-y: scroll;
+}
+
+#playerData {
+    height: 50px;
+    background: rgba(0,0,0,0.7);
+    text-align: center;
+}
+
+#chatting {
+    position: fixed;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    width: 500px;
+}
+#chatList {
+    color: white;
+    height: 120px;
+    overflow-y: scroll;
+}
+
+.gm::before {
+    content: "[GM]";
+    text-shadow: 0px 0px 2px blue;
+    color: blue;
+    margin-right: 5px;
+}
+
+.imsiTitle {
+    padding: 5px;
+    color: yellow;
+    background: rgba(0,0,0,0.7);
+    cursor: move;
+}
+#yell {
+    text-align: center;
+    position: fixed;
+    right:0;
+    left:0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    display: none;
+    font-size: 50px;
+    color: yellow;
+    background: rgba(0,0,0,0.5);
+}
+@keyframes disappear {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+.disappear {
+    animation: 2.5s disappear forwards;
+}
+.feedback {
+    font-size: 15px;
+    color: yellow;
+    text-shadow: 0px 0px 2px yellow;
+}
+
+#fps {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: 40px;
+    margin-top: 40px;
+    color: black;
+    font-size: 30px;
+}

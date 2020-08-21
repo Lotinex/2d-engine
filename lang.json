@@ -1,0 +1,10 @@
+{
+    "ko" : {
+        "tooltip" : {
+            "gift" : "[{#user|name}] 님으로부터 %{number}% 개의 선물을 받았습니다."
+        },
+        "icons" : {
+            "user" : "fas fa-user"
+        }
+    }
+}
